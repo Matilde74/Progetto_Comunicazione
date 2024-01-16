@@ -1,10 +1,11 @@
 
 document.getElementById('mappa').addEventListener("mouseover", hovermappa);
-function hovermappa(){
+
+function hovermappa() {
     document.getElementById("mappa_2").className = "d-block";
+    setTimeout(function() {
+        //Your code
+        document.getElementById("mappa_2").className = "d-none";
+    }, 3000);
 };
 
-document.getElementById('mappa').addEventListener("mouseout", hovermappa2);
-function hovermappa2 (){
-    document.getElementById("mappa_2").className = "d-none";
-};

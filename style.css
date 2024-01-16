@@ -29,7 +29,7 @@
 #bg_home{
     background: url(immagini/Leonardo_Diffusion_XL_Same_1.jpg) no-repeat center fixed;
     background-size: cover;
-    color: var(--tertiary-color);
+    color: var(--secondary-color);
 }
 
 .btn-rombo{
