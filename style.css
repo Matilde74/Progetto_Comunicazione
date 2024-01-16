@@ -1,0 +1,42 @@
+:root{
+    --primary-color: #212121;
+    --secondary-color: #FFFFE3;
+    --tertiary-color: #80D721;
+    --light-color:#B46B3A;
+    --dark-color:#534631;
+}
+
+@font-face {
+    font-family: "Berkshire_Swash";
+    src: url("font/BerkshireSwash-Regular.ttf");
+}
+.h1{
+    font-family: Berkshire_Swash;
+    font-size: clamp(2.5em, 4em, 4em);
+}
+
+.h2{
+    font-family: Berkshire_Swash;
+    font-size: clamp(1.75em, 3.5em, 3.5em);
+}
+
+.h3{
+    font-family: Berkshire_Swash;
+    font-size: clamp(1.375em, 3em, 3em);
+}
+
+
+#bg_home{
+    background: url(immagini/Leonardo_Diffusion_XL_Same_1.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: var(--secondary-color);
+}
+
+.btn-rombo{
+    width: 50px;
+    height: 50px;
+    transform:rotate(45deg) ;
+    background-color: var(--light-color);
+
+}
+
