@@ -13,30 +13,44 @@
 .h1{
     font-family: Berkshire_Swash;
     font-size: clamp(2.5em, 4em, 4em);
+    color: var(--secondary-color)
 }
 
 .h2{
     font-family: Berkshire_Swash;
     font-size: clamp(1.75em, 3.5em, 3.5em);
+    color: var(--secondary-color)
 }
 
 .h3{
     font-family: Berkshire_Swash;
     font-size: clamp(1.375em, 3em, 3em);
+    color: var(--secondary-color)
+}
+
+#navbarNav {
+    background-color: rgba(33, 33, 33, 0.8);
+    width: 100%;
 }
 
 
 #bg_home{
-    background: url(immagini/Leonardo_Diffusion_XL_Same_1.jpg) no-repeat center fixed;
+    background: url(immagini/Sfondo_Home.jpg) no-repeat center fixed;
     background-size: cover;
     color: var(--secondary-color);
 }
 
-.btn-rombo{
+#bg_home2{
+    background: url(immagini/Sfondo_Home_2.jpg) no-repeat center fixed;
+    background-size: cover;
+    color: var(--secondary-color);
+}
+
+/*.btn-rombo{
     width: 50px;
     height: 50px;
     transform:rotate(45deg) ;
-    background-color: var(--primary-color);
+    background-color: var(--tertiary-color);
 
-}
+}/*
 
