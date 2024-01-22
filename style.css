@@ -65,6 +65,10 @@
     color: var(--secondary-color);
 }
 
+.nav-link:hover{
+    color: var(--light-color);
+}
+
 
 #bg_home{
     background: url(immagini/Sfondo_Home.jpg) no-repeat center fixed;
