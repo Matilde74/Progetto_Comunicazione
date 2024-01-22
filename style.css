@@ -125,6 +125,13 @@
     color: var(--secondary-color);
 }
 
+#bg_home_vestiti{
+    background: url(immagini/Sfondo_Home_Vestiti.jpeg) no-repeat top fixed;
+    background-size: cover;
+    background-position-y: -90px;
+    color: var(--secondary-color);
+}
+
 
 
 /*.btn-rombo{
