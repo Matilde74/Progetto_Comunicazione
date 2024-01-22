@@ -118,6 +118,13 @@
     color: var(--secondary-color);
 }
 
+#bg_home_BeA{
+    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top fixed;
+    background-size: cover;
+    background-position-y: -70px;
+    color: var(--secondary-color);
+}
+
 
 
 /*.btn-rombo{
