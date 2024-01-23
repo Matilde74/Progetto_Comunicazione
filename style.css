@@ -126,17 +126,19 @@
 }
 
 #bg_home_BeA{
-    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top fixed;
+    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
     background-size: cover;
     background-position-y: -70px;
     color: var(--secondary-color);
+    height: 800px;
 }
 
 #bg_home_vestiti{
-    background: url(immagini/Sfondo_Home_Vestiti.jpeg) no-repeat top fixed;
+    background: url(immagini/Sfondo_Home_Vestiti.jpeg) no-repeat top local;
     background-size: cover;
     background-position-y: -90px;
     color: var(--secondary-color);
+    height: 800px;
 }
 
 
