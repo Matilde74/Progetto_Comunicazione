@@ -85,7 +85,7 @@
     content: "";
     position: fixed;
     left: 0;
-    right: 0;
+    right:0;
     z-index: -1;
 
     display: block;
@@ -104,18 +104,25 @@
     filter: blur(5px);
 }
 
+.el_mappa {
+    background-attachment: local;
+}
+
 #bg_home{
-    background: url(immagini/Sfondo_Home.jpg) no-repeat fixed;
+    background: url(immagini/Sfondo_Home.jpg) no-repeat ;
     background-size: cover;
     color: var(--secondary-color);
     background-position-y: -20px;
+    background-position-x: center;
+    height: 100%;
 }
 
 #bg_home2{
-    background: url(immagini/Sfondo_Home_2.jpg) no-repeat top fixed;
+    background: url(immagini/Sfondo_Home_2.jpg) no-repeat top local;
     background-size: cover;
-    background-position-y: -170px;
+    background-position-y: -200px;
     color: var(--secondary-color);
+    height: 1000px;
 }
 
 #bg_home_BeA{
