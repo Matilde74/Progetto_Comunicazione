@@ -125,6 +125,82 @@
     height: 1000px;
 }
 
+
+.container_ogg {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Sfondo_Home_2.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.trasparenza_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_armadio {
+    width: 50%;
+    height: 1100px;
+    overflow: hidden;
+    background-image: url('immagini/Oggettistica/Armadio.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container_grid{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 140px 140px 140px 140px;
+    margin-top: 120px;
+    margin-left:50px;
+    gap:0;
+
+}
+
+.contenuto_img {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.contenuto_img_sm {
+    width: 60%;
+   height: 80%;
+    cursor: pointer;
+}
+
+.oggetto {
+    position: absolute;
+    width: 10%; /* Larghezza desiderata dell'oggetto */
+    height: 10%; /* Altezza desiderata dell'oggetto */
+    cursor: pointer;
+}
+
+.img_ogg {
+    width: 20%;
+    height: 20%;
+}
+
+
+
+
 #bg_home_BeA{
     background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
     background-size: cover;
