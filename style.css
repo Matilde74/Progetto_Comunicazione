@@ -52,6 +52,7 @@
 .medium{
     font-family: Gupter;
     font-size: clamp(1.5em, 2em, 2em);
+    color: var(--secondary-color);
 }
 
 .smallcopy{
@@ -60,6 +61,11 @@
     color: var(--secondary-color);
 
 }
+
+html {
+    background-color: var(--primary-color);
+}
+
 #navbarNav {
     background-color: rgba(33, 33, 33, 0.8);
     width: 100%;
@@ -82,65 +88,19 @@
 }
 
 .blur {
-    content: "";
-    position: fixed;
-    left: 0;
-    right:0;
-    z-index: -1;
-
-    display: block;
-    background-image: url('immagini/Sfondo_Home_2.jpg');
-    background-size:cover;
-    background-position-y: -170px;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-
-
-    -webkit-filter: blur(5px);
-    -moz-filter: blur(5px);
-    -o-filter: blur(5px);
-    -ms-filter: blur(5px);
     filter: blur(5px);
 }
 
-.el_mappa {
-    background-attachment: local;
+img{
+    box-sizing: border-box;
 }
 
-#bg_home{
-    background: url(immagini/Sfondo_Home.jpg) no-repeat ;
-    background-size: cover;
-    color: var(--secondary-color);
-    background-position-y: -20px;
-    background-position-x: center;
-    height: 100%;
-}
-
-#bg_home2{
-    background: url(immagini/Sfondo_Home_2.jpg) no-repeat top local;
-    background-size: cover;
-    background-position-y: -200px;
-    color: var(--secondary-color);
-    height: 1000px;
-}
-
-#bg_home_BeA{
-    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
+#bg_Animali{
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
     background-size: cover;
     background-position-y: -70px;
     color: var(--secondary-color);
-    height: 800px;
 }
-
-#bg_home_vestiti{
-    background: url(immagini/Sfondo_Home_Vestiti.jpeg) no-repeat top local;
-    background-size: cover;
-    background-position-y: -90px;
-    color: var(--secondary-color);
-    height: 800px;
-}
-
 
 
 /*.btn-rombo{

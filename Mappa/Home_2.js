@@ -4,7 +4,7 @@ $('#mappa img').on("mouseenter", function(){
     $('#blur').addClass('blur');
 });
 
-$('#bg_home2').on('click', function() {
+$('#blur').on('click', function() {
     $('#mappa').removeClass('d-none');
     $('#mappa_2').addClass('d-none').removeClass('d-block');
     $('#blur').removeClass('blur');
