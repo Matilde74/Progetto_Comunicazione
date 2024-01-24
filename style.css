@@ -95,13 +95,9 @@ img{
     box-sizing: border-box;
 }
 
-#bg_Animali{
-    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
-    background-size: cover;
-    background-position-y: -70px;
-    color: var(--secondary-color);
+.prova{
+    background-image: url("/immagini/Animali/Viperfox.png");
 }
-
 
 /*.btn-rombo{
     width: 50px;
