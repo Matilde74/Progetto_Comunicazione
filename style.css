@@ -216,19 +216,6 @@
     display: block;
 }
 
-#productCard {
-    display: none; /* Nasconde la scheda di default */
-    position: fixed; /* Posizionamento fisso */
-    top: 50%; /* Centratura verticale */
-    left: 50%; /* Centratura orizzontale */
-    transform: translate(-50%, -50%); /* Ajustamento centratura */
-    width: 300px; /* Larghezza della scheda */
-    padding: 20px; /* Padding interno */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombra della scheda */
-    background-color: white; /* Colore di sfondo */
-    z-index: 1000; /* Assicura che la scheda sia sopra altri elementi */
-}
-
 
 
 
