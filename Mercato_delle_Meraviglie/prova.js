@@ -1,0 +1,1 @@
+$('.rombo').children().addClass('p_prodotto');

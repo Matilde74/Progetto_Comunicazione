@@ -4,6 +4,7 @@
     --tertiary-color: #80D721;
     --light-color:#B46B3A;
     --dark-color:#534631;
+    --ombra: #A4A292;
 }
 
 @font-face {
@@ -26,37 +27,37 @@
     src: url("font/Gupter/Gupter-Bold.ttf");
 }
 .h1{
-    font-family: Berkshire_Swash;
+    font-family: "Berkshire_Swash";
     font-size: clamp(2.5em, 4em, 4em);
     color: var(--secondary-color);
 }
 
 .h2{
-    font-family: Berkshire_Swash;
+    font-family: "Berkshire_Swash";
     font-size: clamp(1.75em, 3.5em, 3.5em);
     color: var(--secondary-color);
 }
 
 .h3{
-    font-family: Berkshire_Swash;
+    font-family: "Berkshire_Swash";
     font-size: clamp(1.375em, 3em, 3em);
     color: var(--secondary-color);
 }
 
 .bodycopy{
-    font-family: Gupter;
+    font-family: "Gupter";
     font-size: clamp(1em, 1.50em, 1.75em);
     color: var(--secondary-color);
 }
 
 .medium{
-    font-family: Gupter;
+    font-family: "Gupter Medium";
     font-size: clamp(1.5em, 2em, 2em);
     color: var(--secondary-color);
 }
 
 .smallcopy{
-    font-family: Gupter;
+    font-family: "Gupter";
     font-size: clamp(0.75em, 1.25em, 1.25em);
     color: var(--secondary-color);
 
@@ -99,11 +100,28 @@ img{
     background-image: url("/immagini/Animali/Viperfox.png");
 }
 
-/*.btn-rombo{
-    width: 50px;
-    height: 50px;
+.rombo{
+    width: 616px;
+    height: 616px;
     transform:rotate(45deg) ;
-    background-color: var(--tertiary-color);
+    background-color: var(--light-color);
+    border-radius: 45px;
 
-}/*
+}
 
+.btn-rombo {
+    width: 73px;
+    height: 73px;
+    transform:rotate(45deg) ;
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+}
+
+.p_prodotto{
+    transform:rotate(-45deg) ;
+}
+
+.prodotto{
+   filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
+
+}
