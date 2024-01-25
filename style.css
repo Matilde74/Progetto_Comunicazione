@@ -151,9 +151,8 @@
     width: 50%;
     height: 1100px;
     overflow: hidden;
-    background-image: url('immagini/Oggettistica/Armadio.png');
+    background: url('immagini/Oggettistica/Armadio.png') no-repeat center top;
     background-size: cover;
-    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -180,23 +179,57 @@
     cursor: pointer;
 }
 
+.contenuto_img_label {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+    margin-left:80px;
+    margin-top:-60px;
+}
+
+
 .contenuto_img_sm {
     width: 60%;
    height: 80%;
     cursor: pointer;
 }
 
-.oggetto {
-    position: absolute;
-    width: 10%; /* Larghezza desiderata dell'oggetto */
-    height: 10%; /* Altezza desiderata dell'oggetto */
-    cursor: pointer;
+.label_armadio:hover{
+    transform: scale(3.0) rotate(-25deg);
+    transition: transform 0.5s ease;
+
 }
 
-.img_ogg {
-    width: 20%;
-    height: 20%;
+.Text_label {
+    display: none;
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-left:140px;
+    margin-top:-80px;
+    font-family: Gupter;
+    font-weight: bold;
+    text-align: center;
 }
+
+.label_armadio:hover + .Text_label {
+    display: block;
+}
+
+#productCard {
+    display: none; /* Nasconde la scheda di default */
+    position: fixed; /* Posizionamento fisso */
+    top: 50%; /* Centratura verticale */
+    left: 50%; /* Centratura orizzontale */
+    transform: translate(-50%, -50%); /* Ajustamento centratura */
+    width: 300px; /* Larghezza della scheda */
+    padding: 20px; /* Padding interno */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombra della scheda */
+    background-color: white; /* Colore di sfondo */
+    z-index: 1000; /* Assicura che la scheda sia sopra altri elementi */
+}
+
+
 
 
 
