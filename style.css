@@ -189,7 +189,7 @@
 
 
 .contenuto_img_sm {
-    width: 60%;
+    width: 50%;
    height: 80%;
     cursor: pointer;
 }
@@ -210,6 +210,7 @@
     font-family: Gupter;
     font-weight: bold;
     text-align: center;
+    transform: rotate(12deg)
 }
 
 .label_armadio:hover + .Text_label {
