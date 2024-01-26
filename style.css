@@ -97,7 +97,7 @@ img{
 }
 
 .prova{
-    background-image: url("/immagini/Animali/Viperfox.png");
+    background-image: url("/immagini/Animali/Plantellino.png");
 }
 
 .rombo{
@@ -110,8 +110,8 @@ img{
 }
 
 .btn-rombo {
-    width: 73px;
-    height: 73px;
+    width: 80px;
+    height: 80px;
     transform:rotate(45deg) ;
     background-color: var(--secondary-color);
     border-radius: 15px;
@@ -124,4 +124,19 @@ img{
 .prodotto{
    filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
 
+}
+.descr_card {
+    color: var(--primary-color);
+    left: 28.5%;
+    top:63%;
+    width:550px;
+    height:210px;
+    padding: 5px;
+    background-image: url("immagini/Sfondo_Carta.jpg");
+    border-radius: 5px;
+    overflow-y: hidden;
+}
+
+.base_text{
+    height:90px;
 }
