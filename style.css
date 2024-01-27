@@ -103,10 +103,16 @@ img{
 .rombo{
     width: 616px;
     height: 616px;
-    transform:rotate(45deg) ;
+    transform:rotate(45deg);
     background-color: var(--light-color);
     border-radius: 45px;
 
+}
+
+.shaped{
+    shape-outside: polygon(50% 100%, 0 0, 100% 0);
+    shape-margin: 20px;
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
 }
 
 .btn-rombo {
@@ -140,3 +146,68 @@ img{
 .base_text{
     height:90px;
 }
+
+.top, .bottom {
+    width: 100%;
+    height: 50%;
+    background: white;
+}
+.top {
+    -webkit-shape-outside: polygon(0 20%, 0% 100%, 50% 120%);
+    shape-outside: polygon(0 20%, 0% 100%, 50% 120%);
+    float: left;
+    -webkit-clip-path: polygon(0 20%, 0% 100%, 50% 120%);
+    clip-path: polygon(0 20%, 0% 100%, 50% 120%);
+}
+.bottom {
+    height: 50%;
+    float: right;
+    bottom: 0;
+    clip-path: polygon(0% 100%, 100% 100%, 50% 120%);
+    shape-outside: polygon(0% 100%, 100% 100%, 50% 120%);
+}
+
+
+
+.contenuto_img_label {
+    position: absolute;
+    width:12vw;
+    transform: rotate(150deg);
+    cursor: pointer;
+    top:25%;
+
+
+}
+
+.label_alto {
+    top: 25%;
+    left:-25%;
+}
+
+.label_armadio:hover{
+    transform: scale(3.0) rotate(150deg);
+    transition: transform 0.5s ease;
+}
+
+.label_armadio:hover + .text_label {
+    opacity: 1;
+}
+
+.text_label {
+    opacity: 0;
+    position: absolute;
+    color: var(--primary-color);
+    text-align: left;
+    transform: rotate(-2deg)
+
+}
+
+.last.contenuto_img_label {
+    transform: rotate(-25deg);
+}
+
+.last.contenuto_img_label:hover{
+    transform: scale(3.0) rotate(-25deg) translateX(-20%);
+    transition: transform 0.5s ease;
+}
+
