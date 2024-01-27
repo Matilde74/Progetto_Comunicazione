@@ -52,9 +52,8 @@
 }
 
 .medium{
-    font-family: "Gupter Medium";
+    font-family: "Gupter";
     font-size: clamp(1.5em, 2em, 2em);
-    color: var(--secondary-color);
 }
 
 .smallcopy{
@@ -64,6 +63,7 @@
 
 }
 
+
 html {
     background-color: var(--primary-color);
 }
@@ -72,15 +72,12 @@ html {
     box-sizing: border-box;
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
-}
-
 @keyframes float {
     0% {
 
         transform: translatey(0px);
     }
     50% {
-
         transform: translatey(-10px);
     }
     100% {
@@ -117,18 +114,116 @@ img{
     background-color: var(--light-color);
     border-radius: 45px;
 
+
+
+.container_ogg {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Sfondo_Home_2.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
 }
 
-.shaped{
-    shape-outside: polygon(50% 100%, 0 0, 100% 0);
-    shape-margin: 20px;
-    clip-path: polygon(50% 100%, 0 0, 100% 0);
+.trasparenza_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
+.container_armadio {
+    width: 50%;
+    height: 1100px;
+    overflow: hidden;
+    background: url('immagini/Oggettistica/Armadio.png') no-repeat center top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container_grid{
+    position: relative;
+    width: 70%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 140px 140px 140px 140px 140px;
+    margin-top: 120px;
+    margin-left:50px;
+    gap:0;
+
+}
+
+.contenuto_img {
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+}
+
+.contenuto_img_label {
+    width: 60%;
+    height: 60%;
+    cursor: pointer;
+    margin-left:80px;
+    margin-top:-60px;
+}
+
+
+.contenuto_img_sm {
+    width: 50%;
+   height: 80%;
+    cursor: pointer;
+}
+
+.label_armadio:hover{
+    transform: scale(3.0) rotate(-25deg);
+    transition: transform 0.5s ease;
+
+}
+
+.Text_label {
+    display: none;
+    position: absolute;
+    color: var(--primary-color);
+    font-size: 15px;
+    margin-left:140px;
+    margin-top:-80px;
+    font-family: Gupter;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(12deg)
+}
+
+.label_armadio:hover + .Text_label {
+    display: block;
+}
+
+
+
+
+
+
+#bg_home_BeA{
+    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
+    background-size: cover;
+    background-position-y: -70px;
+    color: var(--secondary-color);
+    height: 800px;
+
+
 
 .btn-rombo {
     width: 80px;
     height: 80px;
-    transform:rotate(45deg) ;
     background-color: var(--secondary-color);
     border-radius: 15px;
 }
@@ -211,7 +306,6 @@ img{
     transform: rotate(-2deg)
 
 }
-
 .last.contenuto_img_label {
     transform: rotate(-25deg);
 }
