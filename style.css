@@ -174,8 +174,8 @@
 }
 
 .contenuto_img {
-    width: 80%;
-    height: 80%;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
 }
 
@@ -185,14 +185,18 @@
     cursor: pointer;
     margin-left:80px;
     margin-top:-60px;
+    z-index: 10;
 }
+
 
 
 .contenuto_img_sm {
-    width: 50%;
-   height: 80%;
+    width: 80px;
+   height: 120px;
+    margin-left: 30px;
     cursor: pointer;
 }
+
 
 .label_armadio:hover{
     transform: scale(3.0) rotate(-25deg);
@@ -201,20 +205,27 @@
 }
 
 .Text_label {
-    display: none;
+    opacity: 0;
     position: absolute;
     color: var(--primary-color);
-    font-size: 15px;
     margin-left:140px;
     margin-top:-80px;
-    font-family: Gupter;
-    font-weight: bold;
-    text-align: center;
-    transform: rotate(12deg)
+    text-align: left;
+    transform: rotate(13deg);
+    transition: transform 0.5s ease-in;
 }
 
-.label_armadio:hover + .Text_label {
+.label_armadio:hover +.Text_label {
     display: block;
+    opacity: 1;
+}
+
+.contenuto_img:hover {
+    transform: scale(1.25);
+}
+
+.contenuto_img_sm:hover {
+    transform: scale(1.25);
 }
 
 
