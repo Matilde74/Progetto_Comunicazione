@@ -72,6 +72,8 @@ html {
     box-sizing: border-box;
     transform: translatey(0px);
     animation: float 3s ease-in-out infinite;
+}
+
 @keyframes float {
     0% {
 
@@ -107,20 +109,20 @@ img{
     background-image: url("/immagini/Animali/Plantellino.png");
 }
 
-.rombo{
+.rombo {
     width: 616px;
     height: 616px;
-    transform:rotate(45deg);
+    transform: rotate(45deg);
     background-color: var(--light-color);
     border-radius: 45px;
-
+}
 
 
 .container_ogg {
     position: relative;
     width: 100%;
     height: 1100px;
-    background: url('immagini/Sfondo_Home_2.jpg') no-repeat;
+    background: url('immagini/Mappa/Sfondo_Home_2.jpg') no-repeat;
     background-size: cover;
     overflow: hidden;
 }
@@ -212,12 +214,13 @@ img{
 
 
 
-#bg_home_BeA{
-    background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
+#bg_home_BeA {
+    background: url(immagini/Mappa/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
     background-size: cover;
     background-position-y: -70px;
     color: var(--secondary-color);
     height: 800px;
+}
 
 
 
