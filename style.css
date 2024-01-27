@@ -95,6 +95,8 @@ html {
 
 .sign_h:hover + .sign{
     display: block;
+    color: var(--tertiary-color);
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .blur {
@@ -209,21 +211,6 @@ img{
     display: block;
 }
 
-
-
-
-
-
-#bg_home_BeA {
-    background: url(immagini/Mappa/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
-    background-size: cover;
-    background-position-y: -70px;
-    color: var(--secondary-color);
-    height: 800px;
-}
-
-
-
 .btn-rombo {
     width: 80px;
     height: 80px;
@@ -275,9 +262,7 @@ img{
     shape-outside: polygon(0% 100%, 100% 100%, 50% 120%);
 }
 
-
-
-.contenuto_img_label {
+.contenuto_img_label_v {
     position: absolute;
     width:12vw;
     transform: rotate(150deg);
@@ -292,7 +277,7 @@ img{
     left:-25%;
 }
 
-.label_armadio:hover{
+.label_armadio_v:hover{
     transform: scale(3.0) rotate(150deg);
     transition: transform 0.5s ease;
 }
