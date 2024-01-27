@@ -6,12 +6,15 @@
   <title>Cosa possiamo offrirti</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
   <link href="stile.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="cosapossiamooffrirti.js"></script>
 </head>
 
 <body>
 
 
-
+  <!-- 
   <nav class="navbar navbar-expand-lg bodyfont " id="navbarNav">
     <div class="container">
       <ul class="navbar-nav flex-row flex-fill align-items-center justify-content-between">
@@ -22,7 +25,28 @@
         <li class="nav-item"><a class="nav-link" href="">Ti sei perso?</a></li>
       </ul>
     </div>
+  </nav> -->
+
+  <nav class="position-fixed" id="nav">
+    <div class="menu position-absolute" id="menu"><svg width="88" height="90" viewBox="0 0 88 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect x="22.4468" y="67.6787" width="30.0487" height="30.0487" rx="5"
+          transform="rotate(-44.6331 22.4468 67.6787)" fill="#80D721" />
+        <rect x="45.073" y="44.3989" width="30.0487" height="30.0487" rx="5" transform="rotate(-44.6331 45.073 44.3989)"
+          fill="#80D721" />
+        <rect x="22.5365" y="21.1113" width="30.0487" height="30.0487" rx="5"
+          transform="rotate(-44.6331 22.5365 21.1113)" fill="#80D721" />
+        <rect y="44.3989" width="30.0487" height="30.0487" rx="5" transform="rotate(-44.6331 0 44.3989)"
+          fill="#80D721" />
+      </svg></div>
+      <ul>
+        <li class="nav-item"><a class="nav-link" href="">La storia di Ephemera</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Chi siamo</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Cosa possiamo offrirti?</a></li>
+        <li class="nav-item"><a class="nav-link" href="">Ti sei perso?</a></li>
+      </ul>
   </nav>
+<div class="blur position-fixed" id="blur"></div>
+
 
   <div class="container-fluid m-0 p-0">
     <div class="perche_esiste flex-fill">
@@ -63,11 +87,11 @@
   </div>
 
 
-  <div class="cosa_dicono p-5 mb-5">
+  <div class="cosa_dicono swiper p-5 mb-5">
     <h2 class="mb-5 mt-5 p-5">Cosa dicono di noi?</h2>
-    <div class="recensioni w-100 d-flex justify-content-center position-relative">
-      <div class="recensione_singola inactive d-flex align-items-center mb-5 position-relative">
-        <div class="commento text-center bodysmall"> 
+    <div class="recensioni swiper-wrapper d-flex position-relative">
+      <div class="recensione_singola swiper-slide inactive d-flex align-items-center mb-5 position-relative">
+        <div class="commento text-center bodysmall">
           <h4 class="nome_utente m-0">PEDRO F.</h4>
           <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
             <div class="diamantino active"></div>
@@ -76,32 +100,18 @@
             <div class="diamantino"></div>
             <div class="diamantino"></div>
           </div>
-          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto. Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo. 
-          Forse è proprio questa la sua magia!"</p></div>
-          <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
-          <div class="icona_utente inactiveimg position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
+          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto.
+            Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo.
+            Forse è proprio questa la sua magia!"</p>
+        </div>
+        <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
+        <div class="icona_utente inactiveimg position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
       </div>
 
-      <div class="recensione_singola d-flex align-items-center mb-5 position-relative">
-        <div class="commento text-center bodysmall"> 
-          <h4 class="nome_utente m-0">PEDRO F.</h4>
-          <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
-            <div class="diamantino active"></div>
-            <div class="diamantino active"></div>
-            <div class="diamantino active"></div>
-            <div class="diamantino"></div>
-            <div class="diamantino"></div>
-          </div>
-          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto. Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo. 
-          Forse è proprio questa la sua magia!"</p></div>
-          <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
-          <div class="icona_utente position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
-      </div>
-      <div class="scrolldx position-absolute"><img src="../immagini/Scroll_small.svg" alt=""></div>
-      <div class="scrollsx position-absolute"><img src="../immagini/Scroll_small.svg" alt=""></div>
 
-      <div class="recensione_singola inactive d-flex align-items-center mb-5 position-relative">
-        <div class="commento text-center bodysmall"> 
+
+      <div class="recensione_singola swiper-slide inactive d-flex align-items-center mb-5 position-relative">
+        <div class="commento text-center bodysmall">
           <h4 class="nome_utente m-0">PEDRO F.</h4>
           <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
             <div class="diamantino active"></div>
@@ -110,34 +120,72 @@
             <div class="diamantino"></div>
             <div class="diamantino"></div>
           </div>
-          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto. Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo. 
-          Forse è proprio questa la sua magia!"</p></div>
-          <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
-          <div class="icona_utente inactiveimg position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
+          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto.
+            Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo.
+            Forse è proprio questa la sua magia!"</p>
+        </div>
+        <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
+        <div class="icona_utente inactiveimg position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
       </div>
+      <div class="recensione_singola swiper-slide d-flex align-items-center mb-5 position-relative">
+        <div class="commento text-center bodysmall">
+          <h4 class="nome_utente m-0">PEDRO F.</h4>
+          <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino"></div>
+            <div class="diamantino"></div>
+          </div>
+          <p class="mx-4">Ho trovato alcune delle idee generare un po' troppo "fuori dalla scatola" per il mio gusto.
+            Tuttavia, devo ammettere che ha fatto emergere concetti interessanti che non avrei mai concepito da solo.
+            Forse è proprio questa la sua magia!"</p>
+        </div>
+        <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
+        <div class="icona_utente position-absolute"><img src="../immagini/Icona_pedro.jpg" alt=""></div>
+      </div>
+      <div class="recensione_singola swiper-slide inactive d-flex align-items-center mb-5 position-relative">
+        <div class="commento text-center bodysmall">
+          <h4 class="nome_utente m-0">BALOORA C.</h4>
+          <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino"></div>
+            <div class="diamantino"></div>
+          </div>
+          <p class="mx-4">Ho adottato un Corvo Androide recuperato da una fabbrica in disuso ed è stata
+            probabilmente la decisione più bella della mia vita! L’iter di adozione è super controllato e sicuro per
+            prepararti al meglio!!</p>
+        </div>
+        <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
+        <div class="icona_utente position-absolute"><img src="../immagini/Icona_Baloora.jpg" alt=""></div>
+      </div>
+
+      <div class="recensione_singola swiper-slide inactive d-flex align-items-center mb-5 position-relative">
+        <div class="commento text-center bodysmall">
+          <h4 class="nome_utente m-0">SCHRODINGER</h4>
+          <div class="rating d-flex justify-content-center gap-3 p-2 mb-2">
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino active"></div>
+            <div class="diamantino"></div>
+            <div class="diamantino"></div>
+          </div>
+          <p class="mx-4">Ottimo acquisto! Era da tanto che cercavo un Orchidentee e finalmente ho trovato ciò che
+            cercavo. Inoltre le sue condizioni erano ottime e all’interno è compreso pure un librettino con le
+            istruzioni. </p>
+        </div>
+        <!-- <div class="icona_utente align-self-end ml-0"><img src="../immagini/Icona_pedro.jpg" alt=""></div> -->
+        <div class="icona_utente inactiveimg position-absolute"><img src="../immagini/Icona_schrodinger.jpg" alt="">
+        </div>
+      </div>
+
     </div>
+    <div class="scrolldx position-absolute"><img src="../immagini/Scroll_small.svg" alt=""></div>
+    <div class="scrollsx position-absolute"><img src="../immagini/Scroll_small.svg" alt=""></div>
   </div>
 
-
-
-  <nav class="navbar navbar-expand-lg bodyfont p-5" id="footer">
-    <div class="container flex-column">
-      <ul class="navbar-nav flex-row align-items-center justify-content-between w-100">
-        <li class="nav-item"><img src="../immagini/Logo.svg" alt=""></li>
-        <li class="nav-item d-flex gap-5">
-          <img src="../immagini/mail.svg" alt="">
-          <img src="../immagini/instagram.svg" alt="">
-          <img src="../immagini/twitter_x.svg" alt="">
-        </li>
-      </ul>
-      <ul class="navbar-nav flex-row flex-fill align-items-center justify-content-between w-100">
-        <li class="nav-item"><a class="nav-link" href="">La storia di Ephemera</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Chi siamo</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Cosa possiamo offrirti?</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Ti sei perso?</a></li>
-      </ul>
-    </div>
-  </nav>
 </body>
 
 </html>
