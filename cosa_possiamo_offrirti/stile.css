@@ -306,7 +306,8 @@ li::after {
 }
 
 .historysection {
-    height: fit-content;
+    background-image: url("../immagini/carta.png");
+    object-fit: cover;
 }
 
 
@@ -325,32 +326,32 @@ li::after {
 
 .founder1 {
     left: 200px;
-    top: 40px;
+    top: 60px;
 }
 
 .founder2 {
     left: 366px;
-    top: 210px;
+    top: 230px;
 }
 
 .founder3 {
     left: 530px;
-    top: 40px;
+    top: 60px;
 }
 
 .founder4 {
     right: 430px;
-    top: 210px;
+    top: 230px;
 }
 
 .founder5 {
     right: 265px;
-    top: 40px;
+    top: 60px;
 }
 
 .founder6 {
     right: 100px;
-    top: 210px;
+    top: 230px;
 }
 
 .button a {
@@ -370,6 +371,15 @@ li::after {
 
 .foundersection {
     height: 650px;
+    
+}
+
+.historytext h2 {
+    color: var(--primary-color);
+}
+
+.historytext p{
+    color: var(--primary-color);
 }
 
 .catpicture {
