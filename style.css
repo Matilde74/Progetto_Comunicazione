@@ -41,9 +41,22 @@
 
 .h3{
     font-family: "Berkshire_Swash";
-    font-size: clamp(1.375em, 3em, 3em);
+    font-size: clamp(1.375em, 2.5em, 3em);
     color: var(--secondary-color);
 }
+
+.h3{
+    font-family: "Berkshire_Swash";
+    font-size: clamp(1.375em, 2.5em, 3em);
+    color: var(--secondary-color);
+}
+
+.h4{
+    font-family: "Berkshire_Swash";
+    font-size: clamp(1.375em, 2.25em, 3em);
+    color: var(--secondary-color);
+}
+
 
 .bodycopy{
     font-family: "Gupter";
@@ -52,7 +65,7 @@
 }
 
 .medium{
-    font-family: "Gupter";
+    font-family: "Gupter Medium";
     font-size: clamp(1.5em, 2em, 2em);
 }
 
@@ -71,7 +84,14 @@ html {
 .float {
     box-sizing: border-box;
     transform: translatey(0px);
-    animation: float 3s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
+}
+
+.float1 {
+    box-sizing: border-box;
+    transform: translatey(0px);
+    animation: float1 2s ease-in-out infinite;
+    cursor: pointer;
 }
 
 @keyframes float {
@@ -79,7 +99,19 @@ html {
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-20px);
+        transform: translatey(-5px);
+    }
+    100% {
+        transform: translatey(0px);
+    }
+}
+
+@keyframes float1 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(5px);
     }
     100% {
         transform: translatey(0px);
@@ -93,7 +125,7 @@ html {
 
 .sign_h:hover + .sign{
     display: block;
-    transform: translateX(-50%) translateY(-50%);
+
 }
 
 .blur {
