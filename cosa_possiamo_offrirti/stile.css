@@ -7,6 +7,7 @@
     --primary-color-opacity-90: #212121e6;
     --tertiary-color-opacity-10: #7fd6211a;
     --dark-color-opacity-70: #534631b3;
+    --light-color-opacity-50:#b46b3a81;
 }
 
 @font-face {
@@ -228,4 +229,204 @@ li::after {
 
 .blur.visible {
     opacity: 1;
+}
+
+.oggetti_cura{
+    width:100%;
+    background-color: white;
+}
+
+.imgfake {
+    box-shadow: 7px 5px 30px var(--light-color);
+    height: 100%;
+    overflow: hidden;
+}
+
+.imgfake img {
+    object-fit: cover;
+}
+
+.logo {
+    background-color: white;
+}
+
+
+.pulsante {
+    width: 30%;
+    background-color: var(--secondary-color);
+    height: 100%;
+    border-radius: 15px;
+}
+
+.pulsante a {
+    color: var(--light-color);
+    text-decoration: none;
+    font-family: Gupter-Regular;
+    font-size: 1.5em;
+}
+
+.popup {
+    width: 50%;
+    background-color: var(--light-color);
+    border-radius: 30px;
+    display: none;
+}
+
+.popup h3 {
+    font-family: BerkshireSwash;
+    font-size: 3em;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+.pop_up {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+
+.entryimage {
+    aspect-ratio: 1;
+    rotate: 45deg;    
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.historyimage img {
+    rotate: -45deg;
+    scale: 1.5;
+}
+
+.historyimage {
+    width: 50%;
+}
+
+.historysection {
+    height: fit-content;
+}
+
+
+.founder {
+    aspect-ratio: 1;
+    rotate: 45deg;
+    width: 220px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.founder img {
+    rotate: -45deg;
+    scale: 1.5;
+}
+
+.founder1 {
+    left: 200px;
+    top: 40px;
+}
+
+.founder2 {
+    left: 366px;
+    top: 210px;
+}
+
+.founder3 {
+    left: 530px;
+    top: 40px;
+}
+
+.founder4 {
+    right: 430px;
+    top: 210px;
+}
+
+.founder5 {
+    right: 265px;
+    top: 40px;
+}
+
+.founder6 {
+    right: 100px;
+    top: 210px;
+}
+
+.button a {
+    font-family: Gupter-Regular;
+    font-size: 2em;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.button {
+    background-color: var(--tertiary-color);
+    width: 350px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foundersection {
+    height: 650px;
+}
+
+.catpicture {
+    aspect-ratio: 1;
+    rotate: 45deg;    
+    width: 400px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: -15px 15px 40px var(--light-color-opacity-50);
+}
+
+.managerpicture img {
+    rotate: -45deg;
+    scale: 1.7;
+}
+
+.managersection {
+    height: 100%;
+}
+
+
+.visitorcard {
+    aspect-ratio: 1;
+    background-color: var(--light-color);
+    width: 30%;
+    rotate: 45deg;
+    border-radius: 44px;
+    margin-top: 200px;
+}
+
+.visitorcard h2 {
+    font-family: Gupter-Regular;
+    font-size: 3em;
+    rotate: -45deg;
+    padding-bottom: 30px;
+}
+
+.visitorcard p {
+    rotate: -45deg;
+    padding-left: 25px;
+}
+
+.visitorsection {
+    height: 100%;
+}
+
+.usericon {
+    aspect-ratio: 1;
+    width: 40%;
+    border-radius: 30px;
+    overflow: hidden;
+    left: -60px;
+    top:-60px;
+    border: 3px solid var(--light-color);
+}
+
+.usericon img {
+    rotate: -45deg;
+    scale: 1.5;
 }
