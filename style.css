@@ -90,12 +90,11 @@ html {
 
 .sign{
     display: none;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    text-shadow: 0 5px 15px  rgba(0, 0, 0, 0.6);
 }
 
 .sign_h:hover + .sign{
     display: block;
-    color: var(--tertiary-color);
     transform: translateX(-50%) translateY(-50%);
 }
 
