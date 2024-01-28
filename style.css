@@ -68,6 +68,7 @@
 .medium{
     font-family: "Gupter Medium";
     font-size: clamp(1.5em, 2em, 2em);
+    color: var(--secondary-color);
 }
 
 .smallcopy{
@@ -324,6 +325,7 @@ img{
     height: 80px;
     background-color: var(--secondary-color);
     border-radius: 15px;
+    transform:rotate(45deg) ;
 }
 
 .p_prodotto{
@@ -370,11 +372,11 @@ img{
     transition: transform 0.5s ease;
 }
 
-.label_armadio:hover + .text_label {
+.label_armadio_v:hover + .text_label_v {
     opacity: 1;
 }
 
-.text_label {
+.text_label_v {
     opacity: 0;
     position: absolute;
     color: var(--primary-color);
@@ -382,11 +384,11 @@ img{
     transform: rotate(-2deg)
 
 }
-.last.contenuto_img_label {
+.last.contenuto_img_label_v {
     transform: rotate(-25deg);
 }
 
-.last.contenuto_img_label:hover{
+.last.contenuto_img_label_v:hover{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
 }
