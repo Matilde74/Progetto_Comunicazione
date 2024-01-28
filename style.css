@@ -238,13 +238,22 @@ img{
     overflow: hidden;
 }
 
+.container_obj_animals {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Mappa/Sfondo_BotanicaeAnimali.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 .trasparenza_bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -282,6 +291,12 @@ img{
     cursor: pointer;
 }
 
+.img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
 .contenuto_img_label {
     width: 60%;
     height: 60%;
@@ -296,6 +311,27 @@ img{
    height: 80%;
     cursor: pointer;
 }
+
+.img_sm {
+    width: 80px;
+    height: 120px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.img_md {
+    width: 140px;
+    height: 160px;
+    margin-top:-20px;
+    cursor: pointer;
+}
+
+.img_big {
+    width: 140px;
+    height: 120px;
+    cursor: pointer;
+}
+
 
 .label_armadio:hover{
     transform: scale(3.0) rotate(-25deg);
@@ -319,6 +355,23 @@ img{
 .label_armadio:hover + .Text_label {
     display: block;
 }
+
+.img:hover {
+    transform: scale(1.25);
+}
+
+.img_sm:hover {
+    transform: scale(1.25);
+}
+
+.img_md:hover{
+    transform: scale(1.25);
+}
+
+.img_big:hover {
+    transform: scale(1.25);
+}
+
 
 .btn-rombo {
     width: 80px;
