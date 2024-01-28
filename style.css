@@ -36,7 +36,7 @@
 
 .h2{
     font-family: "Berkshire_Swash";
-    font-size: clamp(1.75em, 3.5em, 3.5em);
+    font-size: clamp(1.75em, 3.25em, 3.5em);
     color: var(--secondary-color);
 }
 
@@ -73,7 +73,7 @@
 
 .smallcopy{
     font-family: "Gupter";
-    font-size: clamp(0.75em, 1.25em, 1.25em);
+    font-size: clamp(0.75em, 1.15em, 1.25em);
     color: var(--secondary-color);
 
 }
@@ -192,6 +192,11 @@ li {
     color: var(--secondary-color);
 }
 
+.nav-item {
+    font-family: "Gupter Medium";
+    font-size: 1.25rem;
+}
+
 li::after {
     position: absolute;
     height: 6px;
@@ -221,8 +226,8 @@ img{
 }
 
 .rombo {
-    width: 616px;
-    height: 616px;
+    width: 40vw;
+    height: 40vw;
     transform: rotate(45deg);
     background-color: var(--light-color);
     border-radius: 45px;
@@ -381,24 +386,43 @@ img{
     transform:rotate(45deg) ;
 }
 
+#carrello {
+    background-color: var(--tertiary-color); top:52%; right:19%;
+}
+
+#preferiti {
+    background-color: var(--light-color);
+    top:59%;
+    right:24%;
+}
+
 .p_prodotto{
     transform:rotate(-45deg) ;
 }
 
 .prodotto{
    filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
+}
 
+.posiz_rombo{
+    top:20%;
+    left:30%;
 }
 .descr_card {
     color: var(--primary-color);
-    left: 28.5%;
-    top:63%;
     width:550px;
     height:210px;
     padding: 5px;
     background-image: url("immagini/Mappa/Sfondo_Carta.jpg");
     border-radius: 5px;
     overflow-y: hidden;
+    box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .base_text{
@@ -411,8 +435,6 @@ img{
     transform: rotate(150deg);
     cursor: pointer;
     top:25%;
-
-
 }
 
 .label_alto {
@@ -445,5 +467,6 @@ img{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
 }
+
 
 

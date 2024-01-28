@@ -11,5 +11,5 @@ $('.seemore').on('click', function() {
         $('.descr_card').removeClass('d-block').addClass('d-none');
     })
 
-});
+}, );
 
