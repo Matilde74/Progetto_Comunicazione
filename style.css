@@ -135,6 +135,17 @@
     overflow: hidden;
 }
 
+.container_obj_animals {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Sfondo_BotanicaeAnimali.jpeg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+
+
 .trasparenza_bg {
     position: absolute;
     top: 0;
@@ -173,7 +184,7 @@
 
 }
 
-.contenuto_img {
+.img {
     width: 120px;
     height: 120px;
     cursor: pointer;
@@ -190,10 +201,23 @@
 
 
 
-.contenuto_img_sm {
+.img_sm {
     width: 80px;
    height: 120px;
     margin-left: 30px;
+    cursor: pointer;
+}
+
+.img_md {
+    width: 140px;
+    height: 160px;
+    margin-top:-20px;
+    cursor: pointer;
+}
+
+.img_big {
+    width: 140px;
+    height: 120px;
     cursor: pointer;
 }
 
@@ -220,11 +244,19 @@
     opacity: 1;
 }
 
-.contenuto_img:hover {
+.img:hover {
     transform: scale(1.25);
 }
 
-.contenuto_img_sm:hover {
+.img_sm:hover {
+    transform: scale(1.25);
+}
+
+.img_md:hover{
+    transform: scale(1.25);
+}
+
+.img_big:hover {
     transform: scale(1.25);
 }
 
