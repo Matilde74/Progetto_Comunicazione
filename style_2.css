@@ -178,7 +178,7 @@ img {
 
 nav{
     top: 10%;
-    left: 0px;
+    left: 30px;
     z-index: 11;
     background-color: var(--dark-color-opacity-70);
     padding-right: 100px;

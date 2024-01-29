@@ -145,7 +145,7 @@ html {
 
 nav{
     top: 50%;
-    left: 0;
+    left: 2%;
     z-index: 11;
     background-color: var(--dark-color-opacity-70);
     padding-right: 100px;
