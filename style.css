@@ -29,50 +29,50 @@
     src: url("font/Gupter/Gupter-Bold.ttf");
 }
 .h1{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(2.5em, 4em, 4em);
     color: var(--secondary-color);
 }
 
 .h2{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(1.75em, 3.25em, 3.5em);
     color: var(--secondary-color);
 }
 
 .h3{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(1.375em, 2.5em, 3em);
     color: var(--secondary-color);
 }
 
 .h3{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(1.375em, 2.5em, 3em);
     color: var(--secondary-color);
 }
 
 .h4{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(1.375em, 2.25em, 3em);
     color: var(--secondary-color);
 }
 
 
 .bodycopy{
-    font-family: "Gupter";
+    font-family: "Gupter", serif;
     font-size: clamp(1em, 1.50em, 1.75em);
     color: var(--secondary-color);
 }
 
 .medium{
-    font-family: "Gupter Medium";
+    font-family: "Gupter Medium", serif;
     font-size: clamp(1.5em, 2em, 2em);
     color: var(--secondary-color);
 }
 
 .smallcopy{
-    font-family: "Gupter";
+    font-family: "Gupter", serif;
     font-size: clamp(0.75em, 1.15em, 1.25em);
     color: var(--secondary-color);
 
@@ -193,7 +193,7 @@ li {
 }
 
 .nav-item {
-    font-family: "Gupter Medium";
+    font-family: "Gupter Medium", serif;
     font-size: 1.25rem;
 }
 
@@ -351,7 +351,7 @@ img{
     font-size: 15px;
     margin-left:140px;
     margin-top:-80px;
-    font-family: Gupter;
+    font-family: "Gupter", serif;
     font-weight: bold;
     text-align: center;
     transform: rotate(12deg)
