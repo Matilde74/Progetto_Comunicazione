@@ -43,6 +43,8 @@
     color: var(--secondary-color);
 }
 
+
+
 .bodycopy{
     font-family: Gupter;
     font-size: clamp(1em, 1.50em, 1.75em);
@@ -233,7 +235,7 @@
     position: absolute;
     color: var(--primary-color);
     margin-left:140px;
-    margin-top:-80px;
+    margin-top:-90px;
     text-align: left;
     transform: rotate(13deg);
     transition: transform 0.5s ease-in;
@@ -260,11 +262,6 @@
     transform: scale(1.25);
 }
 
-
-
-
-
-
 #bg_home_BeA{
     background: url(immagini/Sfondo_BotanicaeAnimali.jpeg) no-repeat top local;
     background-size: cover;
@@ -279,6 +276,71 @@
     background-position-y: -90px;
     color: var(--secondary-color);
     height: 800px;
+}
+
+nav{
+    top: 50%;
+    left: 0;
+    z-index: 11;
+    background-color: var(--dark-color-opacity-70);
+    padding-right: 100px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: 0.5s;
+}
+
+
+.menu {
+    right: -44px;
+    top: calc(50% - 44px);
+    transition: 0.5s;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    bottom: 0;
+}
+
+li {
+    position: relative;
+}
+
+.nav-link {
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+li::after {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    content: "";
+    bottom: -1.5px;
+    rotate: 45deg;
+    right: -1.5px;
+}
+
+.menu.open svg rect {
+    fill: var(--secondary-color);
+}
+
+.menu svg rect {
+    transition: 0.2s;
+    fill: var(--tertiary-color);
+}
+
+.blur.visible {
+    opacity: 1;
 }
 
 

@@ -1,0 +1,100 @@
+.bg-image {
+background-image: url('immagini/Pergamena1.jpg');
+    background-size: cover;
+    width: 100%;
+height:1200px;
+    display: flex;
+
+}
+
+.h1_dark{
+    font-family: Berkshire_Swash;
+    font-size: clamp(2.5em, 4em, 4em);
+    color: var(--dark-color);
+}
+
+
+
+#title_container {
+    width: 100%;
+}
+
+.chi_siamo_text{
+    width: 100%;
+    text-align: center;
+    margin-top:80px;
+
+}
+
+.container_founders{
+    width: 100%;
+}
+
+
+.text_founders {
+    background-color: #80D721;
+    height:400px;
+}
+
+.rhombus-container {
+    width: 60%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    rotate: 45deg;
+    border-radius: 5px;
+}
+.rhombus-container img {
+    transform: rotate(-45deg);
+
+}
+
+.h2_dark{
+    font-family: Berkshire_Swash;
+    font-size: clamp(1.75em, 3.5em, 3.5em);
+    color: var(--dark-color);
+}
+
+.bodycopy_dark {
+    font-family: Gupter;
+    font-size: clamp(1em, 1.50em, 1.75em);
+    color: var(--dark-color);
+}
+
+.text_box_p {
+    margin-top: 40px;
+    padding-right: 30px;
+
+}
+
+.text_box_title {
+    margin-top: 30px;
+}
+
+* {box-sizing:border-box}
+
+
+
+
+
+.scrollsx {
+    transform: scaleX(-1);
+    margin-left: 10%;
+}
+
+.scrollsx, .scrolldx {
+    height: fit-content;
+    top: 45%;
+    z-index: 1;
+}
+
+.scrolldx {
+    margin-right: 10%;
+}
+
+.swiper-slide {
+    width: 100vw;
+
+}
