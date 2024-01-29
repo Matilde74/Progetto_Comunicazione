@@ -1,4 +1,4 @@
-:root{
+html {
     --primary-color: #212121;
     --secondary-color: #FFFFE3;
     --tertiary-color: #80D721;
@@ -8,6 +8,11 @@
     --tertiary-color-opacity-10: #7fd6211a;
     --dark-color-opacity-70: #534631b3;
     --light-color-opacity-50:#b46b3a81;
+}
+
+html[data-theme=alt]{
+    --primary-color: white;
+    --secondary-color: black;
 }
 
 @font-face {
@@ -61,13 +66,17 @@ h4{
     font-family: Gupter-regular;
 }
 
+.nav-item a {
+    font-family: BerkshireSwash;
+    font-size: 2em;
+}
 
-.perche_esiste {
+.why_ephemera {
     background-image: url("../immagini/Rectangle\ 219.png");
     background-size: 100%;
 }
 
-.perche_esiste_testo {
+.whyephemeratext {
     background-color: var(--primary-color-opacity-90);
 }
 
@@ -80,7 +89,7 @@ img {
 }
 
 
-.recensione_singola {
+.single_review {
     aspect-ratio: 1;
     width: 400px;
     rotate: 45deg;
@@ -92,11 +101,11 @@ img {
     opacity: 50%;
 }
 
-.commento {
+.comment {
     rotate: -45deg;
 }
 
-.diamantino {
+.diamond {
     border: 2px solid var(--secondary-color);
     border-radius: 5px;
     aspect-ratio: 1;
@@ -109,7 +118,7 @@ img {
     box-shadow: 5px 5px 10px 0 var(--dark-color);
 }
 
-.icona_utente {
+.user_icon {
     border-radius: 15px;
     border: 3px solid var(--dark-color);
     overflow: hidden;
@@ -118,11 +127,11 @@ img {
     left: calc(135px /2 * -1);
 }
 
-.swiper-slide-active .icona_utente {
+.swiper-slide-active .user_icon{
     border: 3px solid var(--light-color);
 }
 
-.icona_utente img {
+.user_icon img {
     rotate: -45deg;
     scale: 1.5;
     margin-left: 10px;
@@ -144,7 +153,7 @@ img {
     right: 22%;
 }
 
-.recensioni{
+.reviews{
     width: fit-content;
 }
 
@@ -164,11 +173,12 @@ img {
     width: 110vw;
     opacity: 0;
     transition: 0.5s;
+    display: none;
 }
 
 nav{
-    top: 50%;
-    left: 0;
+    top: 10%;
+    left: 0px;
     z-index: 11;
     background-color: var(--dark-color-opacity-70);
     padding-right: 100px;
@@ -186,7 +196,6 @@ nav{
 
 ul {
     list-style: none;
-    padding-left: 0;
 }
 
 li::before {
@@ -209,13 +218,13 @@ li {
 
 li::after {
     position: absolute;
-    height: 6px;
-    width: 6px;
+    height: 10px;
+    width: 10px;
     background-color: var(--secondary-color);
     content: "";
-    bottom: -1.5px;
+    bottom: -4px;
     rotate: 45deg;
-    right: -1.5px;
+    right: -4px;
 }
 
 .menu.open svg rect {
@@ -231,15 +240,19 @@ li::after {
     opacity: 1;
 }
 
-.oggetti_cura{
+.selfcare_products {
     width:100%;
-    background-color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: .5s;
 }
 
 .imgfake {
     box-shadow: 7px 5px 30px var(--light-color);
-    height: 100%;
     overflow: hidden;
+    aspect-ratio: 1;
+    align-items: center;
+    display: flexs;
 }
 
 .imgfake img {
@@ -247,18 +260,20 @@ li::after {
 }
 
 .logo {
-    background-color: white;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    transition: .5s;
 }
 
-
-.pulsante {
+.buttonpopup {
     width: 30%;
     background-color: var(--secondary-color);
     height: 100%;
     border-radius: 15px;
+    z-index: 14;
 }
 
-.pulsante a {
+.buttonpopup a {
     color: var(--light-color);
     text-decoration: none;
     font-family: Gupter-Regular;
@@ -269,7 +284,6 @@ li::after {
     width: 50%;
     background-color: var(--light-color);
     border-radius: 30px;
-    display: none;
 }
 
 .popup h3 {
@@ -285,8 +299,30 @@ li::after {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 2;
+    z-index: 12;
+    transition: .5s;
+    scale: 0;
 }
+
+.pop_up.open {
+    scale: 1;
+}
+
+.shining {
+    z-index: 13;
+    width: 100%;
+    height: 100%;
+    top: -90px;
+    left: 100px;
+}
+
+.imglogo {
+    display: none;
+    width: 30%;
+    
+}
+
+
 
 .entryimage {
     aspect-ratio: 1;
@@ -294,11 +330,12 @@ li::after {
     width: 400px;
     overflow: hidden;
     border-radius: 20px;
+    height: 400px;
 }
 
 .historyimage img {
     rotate: -45deg;
-    scale: 1.5;
+    scale: 2.3;
 }
 
 .historyimage {
@@ -310,6 +347,9 @@ li::after {
     object-fit: cover;
 }
 
+.founders {
+    width: 1248px;
+}
 
 .founder {
     aspect-ratio: 1;
@@ -317,6 +357,7 @@ li::after {
     width: 220px;
     overflow: hidden;
     border-radius: 20px;
+    box-shadow: -10px 10px 40px var(--light-color-opacity-50);
 }
 
 .founder img {
@@ -325,32 +366,32 @@ li::after {
 }
 
 .founder1 {
-    left: 200px;
+    left: 140px;
     top: 60px;
 }
 
 .founder2 {
-    left: 366px;
+    left: 300px;
     top: 230px;
 }
 
 .founder3 {
-    left: 530px;
+    left: 460px;
     top: 60px;
 }
 
 .founder4 {
-    right: 430px;
+    right: 405px;
     top: 230px;
 }
 
 .founder5 {
-    right: 265px;
+    right: 240px;
     top: 60px;
 }
 
 .founder6 {
-    right: 100px;
+    right: 75px;
     top: 230px;
 }
 
@@ -371,12 +412,14 @@ li::after {
 
 .foundersection {
     height: 650px;
+    align-items: center;
     
 }
 
 .historytext h2 {
     color: var(--primary-color);
 }
+
 
 .historytext p{
     color: var(--primary-color);
@@ -413,14 +456,8 @@ li::after {
 .visitorcard h2 {
     font-family: Gupter-Regular;
     font-size: 3em;
-    rotate: -45deg;
-    padding-bottom: 30px;
 }
 
-.visitorcard p {
-    rotate: -45deg;
-    padding-left: 25px;
-}
 
 .visitorsection {
     height: 100%;
@@ -440,3 +477,12 @@ li::after {
     rotate: -45deg;
     scale: 1.5;
 }
+
+.visitorsectiontitle {
+    margin-left: 4rem;
+}
+
+.description {
+    rotate: -45deg;
+}
+
