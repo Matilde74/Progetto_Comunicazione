@@ -132,12 +132,6 @@ html {
 }
 
 
-.swiper-slide-active {
-    background-color: var(--light-color);
-    z-index: 1;
-    scale: 1;
-    opacity: 100%;
-}
 
 .blur {
     display: none;
