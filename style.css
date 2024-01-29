@@ -5,6 +5,7 @@
     --light-color:#B46B3A;
     --dark-color:#534631;
     --ombra: #A4A292;
+    --dark-color-opacity-70: #534631b3;
     min-width: 1024px;
 }
 
@@ -28,37 +29,51 @@
     src: url("font/Gupter/Gupter-Bold.ttf");
 }
 .h1{
-    font-family: "Berkshire_Swash";
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(2.5em, 4em, 4em);
     color: var(--secondary-color);
 }
 
 .h2{
-    font-family: "Berkshire_Swash";
-    font-size: clamp(1.75em, 3.5em, 3.5em);
+    font-family: "Berkshire_Swash", fantasy;
+    font-size: clamp(1.75em, 3.25em, 3.5em);
     color: var(--secondary-color);
 }
 
 .h3{
-    font-family: "Berkshire_Swash";
-    font-size: clamp(1.375em, 3em, 3em);
+    font-family: "Berkshire_Swash", fantasy;
+    font-size: clamp(1.375em, 2.5em, 3em);
     color: var(--secondary-color);
 }
 
+.h3{
+    font-family: "Berkshire_Swash", fantasy;
+    font-size: clamp(1.375em, 2.5em, 3em);
+    color: var(--secondary-color);
+}
+
+.h4{
+    font-family: "Berkshire_Swash", fantasy;
+    font-size: clamp(1.375em, 2.25em, 3em);
+    color: var(--secondary-color);
+}
+
+
 .bodycopy{
-    font-family: "Gupter";
+    font-family: "Gupter", serif;
     font-size: clamp(1em, 1.50em, 1.75em);
     color: var(--secondary-color);
 }
 
 .medium{
-    font-family: "Gupter";
+    font-family: "Gupter Medium", serif;
     font-size: clamp(1.5em, 2em, 2em);
+    color: var(--secondary-color);
 }
 
 .smallcopy{
-    font-family: "Gupter";
-    font-size: clamp(0.75em, 1.25em, 1.25em);
+    font-family: "Gupter", serif;
+    font-size: clamp(0.75em, 1.15em, 1.25em);
     color: var(--secondary-color);
 
 }
@@ -71,19 +86,36 @@ html {
 .float {
     box-sizing: border-box;
     transform: translatey(0px);
-    animation: float 3s ease-in-out infinite;
+    animation: float 2s ease-in-out infinite;
+}
+
+.float1 {
+    box-sizing: border-box;
+    transform: translatey(0px);
+    animation: float1 2s ease-in-out infinite;
+    cursor: pointer;
 }
 
 @keyframes float {
     0% {
-
         transform: translatey(0px);
     }
     50% {
-        transform: translatey(-10px);
+        transform: translatey(-5px);
     }
     100% {
+        transform: translatey(0px);
+    }
+}
 
+@keyframes float1 {
+    0% {
+        transform: translatey(0px);
+    }
+    50% {
+        transform: translatey(5px);
+    }
+    100% {
         transform: translatey(0px);
     }
 }
@@ -95,24 +127,107 @@ html {
 
 .sign_h:hover + .sign{
     display: block;
-    transform: translateX(-50%) translateY(-50%);
+
+}
+
+
+.swiper-slide-active {
+    background-color: var(--light-color);
+    z-index: 1;
+    scale: 1;
+    opacity: 100%;
 }
 
 .blur {
-    filter: blur(5px);
+    display: none;
+    top: 0;
+    left:0;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    height: 110vh;
+    width: 110vw;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav{
+    top: 50%;
+    left: 0;
+    z-index: 11;
+    background-color: var(--dark-color-opacity-70);
+    padding-right: 100px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: 0.5s;
+}
+
+
+.menu {
+    right: -44px;
+    top: calc(50% - 44px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    bottom: 0;
+}
+
+li {
+    position: relative;
+}
+
+.nav-link {
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.nav-item {
+    font-family: "Gupter Medium", serif;
+    font-size: 1.25rem;
+}
+
+li::after {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    content: "";
+    bottom: -1.5px;
+    rotate: 45deg;
+    right: -1.5px;
+}
+
+.menu.open svg rect {
+    fill: var(--secondary-color);
+}
+
+.menu svg rect {
+    transition: 0.2s;
+    fill: var(--tertiary-color);
+}
+
+.blur.visible {
+    opacity: 1;
 }
 
 img{
     box-sizing: border-box;
 }
 
-.prova{
-    background-image: url("/immagini/Animali/Plantellino.png");
-}
-
 .rombo {
-    width: 616px;
-    height: 616px;
+    width: 40vw;
+    height: 40vw;
     transform: rotate(45deg);
     background-color: var(--light-color);
     border-radius: 45px;
@@ -128,13 +243,22 @@ img{
     overflow: hidden;
 }
 
+.container_obj_animals {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Mappa/Sfondo_BotanicaeAnimali.jpg') no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
 .trasparenza_bg {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.8);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -172,6 +296,12 @@ img{
     cursor: pointer;
 }
 
+.img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+}
+
 .contenuto_img_label {
     width: 60%;
     height: 60%;
@@ -187,6 +317,27 @@ img{
     cursor: pointer;
 }
 
+.img_sm {
+    width: 80px;
+    height: 120px;
+    margin-left: 30px;
+    cursor: pointer;
+}
+
+.img_md {
+    width: 140px;
+    height: 160px;
+    margin-top:-20px;
+    cursor: pointer;
+}
+
+.img_big {
+    width: 140px;
+    height: 120px;
+    cursor: pointer;
+}
+
+
 .label_armadio:hover{
     transform: scale(3.0) rotate(-25deg);
     transition: transform 0.5s ease;
@@ -200,7 +351,7 @@ img{
     font-size: 15px;
     margin-left:140px;
     margin-top:-80px;
-    font-family: Gupter;
+    font-family: "Gupter", serif;
     font-weight: bold;
     text-align: center;
     transform: rotate(12deg)
@@ -210,11 +361,39 @@ img{
     display: block;
 }
 
+.img:hover {
+    transform: scale(1.25);
+}
+
+.img_sm:hover {
+    transform: scale(1.25);
+}
+
+.img_md:hover{
+    transform: scale(1.25);
+}
+
+.img_big:hover {
+    transform: scale(1.25);
+}
+
+
 .btn-rombo {
     width: 80px;
     height: 80px;
     background-color: var(--secondary-color);
     border-radius: 15px;
+    transform:rotate(45deg) ;
+}
+
+#carrello {
+    background-color: var(--tertiary-color); top:52%; right:19%;
+}
+
+#preferiti {
+    background-color: var(--light-color);
+    top:59%;
+    right:24%;
 }
 
 .p_prodotto{
@@ -223,42 +402,31 @@ img{
 
 .prodotto{
    filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
+}
 
+.posiz_rombo{
+    top:20%;
+    left:30%;
 }
 .descr_card {
     color: var(--primary-color);
-    left: 28.5%;
-    top:63%;
     width:550px;
     height:210px;
     padding: 5px;
     background-image: url("immagini/Mappa/Sfondo_Carta.jpg");
     border-radius: 5px;
     overflow-y: hidden;
+    box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .base_text{
     height:90px;
-}
-
-.top, .bottom {
-    width: 100%;
-    height: 50%;
-    background: white;
-}
-.top {
-    -webkit-shape-outside: polygon(0 20%, 0% 100%, 50% 120%);
-    shape-outside: polygon(0 20%, 0% 100%, 50% 120%);
-    float: left;
-    -webkit-clip-path: polygon(0 20%, 0% 100%, 50% 120%);
-    clip-path: polygon(0 20%, 0% 100%, 50% 120%);
-}
-.bottom {
-    height: 50%;
-    float: right;
-    bottom: 0;
-    clip-path: polygon(0% 100%, 100% 100%, 50% 120%);
-    shape-outside: polygon(0% 100%, 100% 100%, 50% 120%);
 }
 
 .contenuto_img_label_v {
@@ -267,8 +435,6 @@ img{
     transform: rotate(150deg);
     cursor: pointer;
     top:25%;
-
-
 }
 
 .label_alto {
@@ -281,11 +447,11 @@ img{
     transition: transform 0.5s ease;
 }
 
-.label_armadio:hover + .text_label {
+.label_armadio_v:hover + .text_label_v {
     opacity: 1;
 }
 
-.text_label {
+.text_label_v {
     opacity: 0;
     position: absolute;
     color: var(--primary-color);
@@ -293,12 +459,14 @@ img{
     transform: rotate(-2deg)
 
 }
-.last.contenuto_img_label {
+.last.contenuto_img_label_v {
     transform: rotate(-25deg);
 }
 
-.last.contenuto_img_label:hover{
+.last.contenuto_img_label_v:hover{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
 }
+
+
 
