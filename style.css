@@ -6,6 +6,7 @@
     --dark-color:#534631;
     --ombra: #A4A292;
     --dark-color-opacity-70: #534631b3;
+    --bs-dropdown-color: var(--primary-color);
     min-width: 1024px;
 }
 
@@ -57,6 +58,7 @@
     font-size: clamp(1.375em, 2.25em, 3em);
     color: var(--secondary-color);
 }
+
 
 .bodycopy{
     font-family: "Gupter", serif;
@@ -129,6 +131,7 @@ html {
 
 }
 
+
 .swiper-slide-active {
     background-color: var(--light-color);
     z-index: 1;
@@ -195,14 +198,16 @@ li {
 }
 
 .nav-item {
-    font-family: "Gupter Medium", serif;
+    font-family: "Berkshire_Swash", fantasy;
     font-size: 1.25rem;
 }
+
 li::after {
     position: absolute;
     height: 6px;
     width: 6px;
     background-color: var(--secondary-color);
+    content: "";
     bottom: -1.5px;
     rotate: 45deg;
     right: -1.5px;
@@ -224,7 +229,8 @@ li::after {
 img{
     box-sizing: border-box;
 }
-.rombo {
+
+.rhombus {
     width: 40vw;
     height: 40vw;
     transform: rotate(45deg);
@@ -244,6 +250,7 @@ img{
 
 .container_obj_animals {
     position: relative;
+    width: 100%;
     height: 1100px;
     background: url('immagini/Mappa/Sfondo_BotanicaeAnimali.jpg') no-repeat;
     background-size: cover;
@@ -262,12 +269,12 @@ img{
     justify-content: center;
 }
 
-
 .container_armadio {
     width: 50%;
     height: 1100px;
     overflow: hidden;
     background: url('immagini/Oggettistica/Armadio.png') no-repeat center top;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -322,11 +329,10 @@ img{
     cursor: pointer;
 }
 
-
 .img_md {
     width: 140px;
     height: 160px;
-    margin-top: -20px;
+    margin-top:-20px;
     cursor: pointer;
 }
 
@@ -340,7 +346,6 @@ img{
 .label_armadio:hover{
     transform: scale(3.0) rotate(-25deg);
     transition: transform 0.5s ease;
-
 
 }
 
@@ -378,48 +383,52 @@ img{
 }
 
 
-.btn-rombo {
+.btn-rhombus {
     width: 80px;
     height: 80px;
     background-color: var(--secondary-color);
     border-radius: 15px;
+    transform:rotate(45deg) ;
 }
 
-#carrello {
+#cart {
     background-color: var(--tertiary-color); top:52%; right:19%;
 }
 
-#preferiti {
+#favourite {
     background-color: var(--light-color);
     top:59%;
     right:24%;
 }
 
-.p_prodotto{
+.p_product{
     transform:rotate(-45deg) ;
 }
 
-.prodotto{
+.product{
    filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
 }
 
-.posiz_rombo{
+.posiz_rhombus{
     top:20%;
     left:30%;
 }
-.descr_card {
+.descr_card_Animali {
     color: var(--primary-color);
-    width:550px;
-    height:210px;
-    padding: 5px;
     background-image: url("immagini/Mappa/Sfondo_Carta.jpg");
+}
+
+.descr_card {
+    width:350px;
+    padding: 5px;
+    background-color: var(--tertiary-color);
     border-radius: 5px;
     overflow-y: hidden;
     box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -428,7 +437,11 @@ img{
     height:90px;
 }
 
-.contenuto_img_label_v {
+.seemore{
+    cursor: pointer;
+}
+
+.content_img_label_v {
     position: absolute;
     width:12vw;
     transform: rotate(150deg);
@@ -436,19 +449,20 @@ img{
     top:25%;
 }
 
-.label_alto {
+.label_top {
     top: 25%;
     left:-25%;
 }
 
-.label_armadio_v:hover{
+.label_wardrobe_v:hover{
     transform: scale(3.0) rotate(150deg);
     transition: transform 0.5s ease;
 }
 
-.label_armadio_v:hover + .text_label_v {
+.label_wardrobe_v:hover + .text_label_v {
     opacity: 1;
 }
+
 .text_label_v {
     opacity: 0;
     position: absolute;
@@ -457,11 +471,11 @@ img{
     transform: rotate(-2deg)
 
 }
-.last.contenuto_img_label_v {
+.last.content_img_label_v {
     transform: rotate(-25deg);
 }
 
-.last.contenuto_img_label_v:hover{
+.last.content_img_label_v:hover{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
 }
