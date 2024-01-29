@@ -12,22 +12,22 @@
 
 @font-face {
     font-family: "Berkshire_Swash";
-    src: url("font/BerkshireSwash-Regular.ttf");
+    src: url("../font/BerkshireSwash-Regular.ttf");
 }
 
 @font-face {
     font-family: "Gupter";
-    src: url("font/Gupter/Gupter-Regular.ttf");
+    src: url("../font/Gupter/Gupter-Regular.ttf");
 }
 
 @font-face {
     font-family: "Gupter Medium";
-    src: url("font/Gupter/Gupter-Medium.ttf");
+    src: url("../font/Gupter/Gupter-Medium.ttf");
 }
 
 @font-face {
     font-family: "Gupter Bold";
-    src: url("font/Gupter/Gupter-Bold.ttf");
+    src: url("../font/Gupter/Gupter-Bold.ttf");
 }
 .h1{
     font-family: "Berkshire_Swash", fantasy;
@@ -249,7 +249,7 @@ img{
     position: relative;
     width: 100%;
     height: 1100px;
-    background: url('immagini/Mappa/Sfondo_Home_2.jpg') no-repeat;
+    background: url('../immagini/Mappa/Sfondo_Home_2.jpg') no-repeat;
     background-size: cover;
     overflow: hidden;
 }
@@ -258,7 +258,7 @@ img{
     position: relative;
     width: 100%;
     height: 1100px;
-    background: url('immagini/Mappa/Sfondo_BotanicaeAnimali.jpg') no-repeat;
+    background: url('../immagini/Mappa/Sfondo_BotanicaeAnimali.jpg') no-repeat;
     background-size: cover;
     overflow: hidden;
 }
@@ -279,7 +279,7 @@ img{
     width: 50%;
     height: 1100px;
     overflow: hidden;
-    background: url('immagini/Oggettistica/Armadio.png') no-repeat center top;
+    background: url('../immagini/Oggettistica/Armadio.png') no-repeat center top;
     background-size: cover;
     display: flex;
     align-items: center;
@@ -434,7 +434,7 @@ img{
 }
 .descr_card_Animali {
     color: var(--primary-color);
-    background-image: url("immagini/Mappa/Sfondo_Carta.jpg");
+    background-image: url("../immagini/Mappa/Sfondo_Carta.jpg");
 }
 
 .descr_card {
