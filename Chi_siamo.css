@@ -8,7 +8,7 @@
 }
 
 .h1_dark{
-    font-family: Berkshire_Swash;
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(2.5em, 4em, 4em);
     color: var(--dark-color);
 }
