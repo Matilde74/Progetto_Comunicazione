@@ -1,0 +1,3 @@
+il tag ‘srcalt’ funziona da identificatore per l'animazione nel file javascript della landing page. 
+
+Nonostante l'avviso riguardante il tag a e la classe bottoni, il codice funziona correttamente 
