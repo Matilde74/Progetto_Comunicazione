@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const swiper = new Swiper ('.swiper', {
+    const swiper = new Swiper('.swiper', {
         direction: 'horizontal',
         loop: true,
         slidesPerView: 3,

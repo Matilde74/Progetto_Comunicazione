@@ -13,8 +13,10 @@
     <orderEntry type="library" name="@types/jquery" level="application" />
     <orderEntry type="library" name="JQuery" level="project" />
     <orderEntry type="library" name="jquery-3.5.1" level="application" />
-    <orderEntry type="library" name="@types/swiper" level="application" />
-    <orderEntry type="library" name="swiper" level="application" />
     <orderEntry type="library" name="animate.css" level="application" />
+    <orderEntry type="library" name="jquery-3.3.1.slim" level="application" />
+    <orderEntry type="library" name="swiper" level="application" />
+    <orderEntry type="library" name="@types/swiper" level="application" />
+
   </component>
 </module>

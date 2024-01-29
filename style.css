@@ -203,6 +203,15 @@ li {
 .nav-item {
     font-family: "Berkshire_Swash", fantasy;
     font-size: 1.25rem;
+.nav-link:hover{
+    color: var(--primary-color);
+}
+
+.navbar-nav {
+    flex: 1;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
 }
 
 li::after {
@@ -247,6 +256,17 @@ img{
     width: 100%;
     height: 1100px;
     background: url('immagini/Mappa/Sfondo_Home_2.jpg') no-repeat;
+
+
+.el_mappa {
+    background-attachment: local;
+}
+
+.container_obj {
+    position: relative;
+    width: 100%;
+    height: 1100px;
+    background: url('immagini/Sfondo_Home_2.jpg') no-repeat;
     background-size: cover;
     overflow: hidden;
 }
@@ -260,19 +280,19 @@ img{
     overflow: hidden;
 }
 
-.trasparenza_bg {
+.trasparency_bg  {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.4);
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.container_armadio {
+.container_wardrobe {
     width: 50%;
     height: 1100px;
     overflow: hidden;
@@ -298,7 +318,7 @@ img{
 
 }
 
-.contenuto_img {
+.content_img {
     width: 80%;
     height: 80%;
     cursor: pointer;
@@ -310,12 +330,14 @@ img{
     cursor: pointer;
 }
 
-.contenuto_img_label {
+.cont_img_label {
     width: 60%;
     height: 60%;
     cursor: pointer;
     margin-left:80px;
-    margin-top:-60px;
+    margin-top:-100px;
+    z-index: 10;
+    transform: rotate(-29deg);
 }
 
 
@@ -346,28 +368,40 @@ img{
 }
 
 
-.label_armadio:hover{
+.label_wardrobe:hover{
     transform: scale(3.0) rotate(-25deg);
     transition: transform 0.5s ease;
 
 }
 
 .Text_label {
-    display: none;
+    opacity: 0;
     position: absolute;
     color: var(--primary-color);
-    font-size: 15px;
     margin-left:140px;
-    margin-top:-80px;
-    font-family: "Gupter", serif;
-    font-weight: bold;
-    text-align: center;
-    transform: rotate(12deg)
+    margin-top:-115px;
+    text-align: left;
+    transform: rotate(8deg);
+    transition: transform 0.5s ease-in;
 }
 
-.label_armadio:hover + .Text_label {
-    display: block;
+.Text_label_long {
+    opacity: 0;
+    position: absolute;
+    color: var(--primary-color);
+    margin-left:140px;
+    margin-top:-115px;
+    text-align: left;
+    transform: rotate(8deg);
+    transition: transform 0.5s ease-in;
+    line-height:1.2;
 }
+
+.label_wardrobe:hover +.Text_label {
+    display: block;
+    opacity: 1;
+}
+
 
 .img:hover {
     transform: scale(1.25);
@@ -384,7 +418,6 @@ img{
 .img_big:hover {
     transform: scale(1.25);
 }
-
 
 .btn-rhombus {
     width: 80px;
@@ -465,7 +498,9 @@ img{
 .label_wardrobe_v:hover + .text_label_v {
     opacity: 1;
 }
-
+.menu.open svg rect {
+    fill: var(--secondary-color);
+}
 .text_label_v {
     opacity: 0;
     position: absolute;
@@ -481,6 +516,16 @@ img{
 .last.content_img_label_v:hover{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
+}
+
+
+.menu svg rect {
+    transition: 0.2s;
+    fill: var(--tertiary-color);
+}
+
+.blur.visible {
+    opacity: 1;
 }
 
 

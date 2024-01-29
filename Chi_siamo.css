@@ -1,0 +1,192 @@
+.bg-image {
+    background-image: url('immagini/Pergamena1.jpg');
+    background-size: cover;
+    width: 100%;
+    height:1000px;
+    display: block;
+
+}
+
+.h1_dark{
+    font-family: Berkshire_Swash;
+    font-size: clamp(2.5em, 4em, 4em);
+    color: var(--dark-color);
+}
+
+
+
+#title_container {
+    width: 100%;
+}
+
+.chi_siamo_text{
+    width: 100%;
+    text-align: center;
+    margin-top:80px;
+
+}
+
+.container_founders{
+    width: 100%;
+}
+
+
+.text_founders {
+    background-color: #80D721;
+    height:400px;
+}
+
+.rhombus-container {
+    width: 65%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1;
+    rotate: 45deg;
+    border-radius: 5px;
+}
+.rhombus-container img {
+    transform: rotate(-45deg);
+
+}
+
+.h2_dark{
+    font-family: Berkshire_Swash;
+    font-size: clamp(1.75em, 3.5em, 3.5em);
+    color: var(--dark-color);
+}
+
+.bodycopy_dark {
+    font-family: Gupter;
+    font-size: clamp(1em, 1.50em, 1.75em);
+    color: var(--dark-color);
+}
+
+.text_box_p {
+    margin-top: 40px;
+    padding-right: 30px;
+
+}
+
+.text_box_title {
+    margin-top: 30px;
+}
+
+* {box-sizing:border-box}
+
+
+
+
+
+.scrollsx {
+    transform: scaleX(-1);
+    margin-left: 10%;
+
+
+}
+
+.scrollsx, .scrolldx {
+    height: fit-content;
+    top: 45%;
+    z-index: 1;
+}
+
+.scrolldx {
+    margin-right: 10%;
+}
+
+.swiper-slide {
+    width: 100vw;
+
+}
+
+.text_footer {
+    margin-left: 10px;
+}
+
+.blur {
+    display: none;
+    top: 0;
+    left:0;
+    backdrop-filter: blur(5px);
+    z-index: 10;
+    height: 110vh;
+    width: 110vw;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+nav{
+    top: 50%;
+    left: 0;
+    z-index: 11;
+    background-color: var(--dark-color-opacity-70);
+    padding-right: 100px;
+    border-top-right-radius: 45px;
+    border-bottom-right-radius: 45px;
+    transition: 0.5s;
+}
+
+
+.menu {
+    right: -44px;
+    top: calc(50% - 44px);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+li::before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--secondary-color);
+    bottom: 0;
+}
+
+li {
+    position: relative;
+}
+
+.nav-link {
+    padding: 10px;
+    color: var(--secondary-color);
+}
+
+.nav-item {
+    font-family: "Gupter Medium", serif;
+    font-size: 1.25rem;
+}
+
+li::after {
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    background-color: var(--secondary-color);
+    content: "";
+    bottom: -1.5px;
+    rotate: 45deg;
+    right: -1.5px;
+}
+
+.menu.open svg rect {
+    fill: var(--secondary-color);
+}
+
+.menu svg rect {
+    transition: 0.2s;
+    fill: var(--tertiary-color);
+}
+
+.blur.visible {
+    opacity: 1;
+}
+
+
+
