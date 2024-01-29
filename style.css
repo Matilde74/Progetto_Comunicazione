@@ -6,6 +6,7 @@
     --dark-color:#534631;
     --ombra: #A4A292;
     --dark-color-opacity-70: #534631b3;
+    --bs-dropdown-color: var(--primary-color);
     min-width: 1024px;
 }
 
@@ -408,7 +409,7 @@ img{
     top:20%;
     left:30%;
 }
-.descr_card {
+.descr_card_animali {
     color: var(--primary-color);
     width:550px;
     height:210px;
@@ -421,6 +422,21 @@ img{
     margin-left: auto;
     margin-right: auto;
     top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.descr_card {
+    width:350px;
+    padding: 5px;
+    background-color: var(--tertiary-color);
+    border-radius: 5px;
+    overflow-y: hidden;
+    box-shadow: 0 25px 15px 0 rgba(0, 0, 0, 0.2);
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    top: 58%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
