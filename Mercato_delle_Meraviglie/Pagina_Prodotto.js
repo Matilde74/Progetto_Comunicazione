@@ -1,5 +1,5 @@
-$('.rombo').children().addClass('p_prodotto');
-$('.btn-rombo').children().addClass('p_prodotto');
+$('.rhombus').children().addClass('p_product');
+$('.btn-rhombus').children().addClass('p_product');
 
 
 $('.seemore').on('click', function() {

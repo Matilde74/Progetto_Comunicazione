@@ -7,7 +7,6 @@
     --ombra: #A4A292;
     --dark-color-opacity-70: #534631b3;
     --bs-dropdown-color: var(--primary-color);
-    min-width: 1024px;
 }
 
 @font-face {
@@ -226,7 +225,7 @@ img{
     box-sizing: border-box;
 }
 
-.rombo {
+.rhombus {
     width: 40vw;
     height: 40vw;
     transform: rotate(45deg);
@@ -379,7 +378,7 @@ img{
 }
 
 
-.btn-rombo {
+.btn-rhombus {
     width: 80px;
     height: 80px;
     background-color: var(--secondary-color);
@@ -387,29 +386,29 @@ img{
     transform:rotate(45deg) ;
 }
 
-#carrello {
+#cart {
     background-color: var(--tertiary-color); top:52%; right:19%;
 }
 
-#preferiti {
+#favourite {
     background-color: var(--light-color);
     top:59%;
     right:24%;
 }
 
-.p_prodotto{
+.p_product{
     transform:rotate(-45deg) ;
 }
 
-.prodotto{
+.product{
    filter: drop-shadow(var(--ombra) 0.25rem 0.25rem 10px);
 }
 
-.posiz_rombo{
+.posiz_rhombus{
     top:20%;
     left:30%;
 }
-.descr_card_animali {
+.descr_card_Animali {
     color: var(--primary-color);
     background-image: url("immagini/Mappa/Sfondo_Carta.jpg");
 }
@@ -437,7 +436,7 @@ img{
     cursor: pointer;
 }
 
-.contenuto_img_label_v {
+.content_img_label_v {
     position: absolute;
     width:12vw;
     transform: rotate(150deg);
@@ -445,17 +444,17 @@ img{
     top:25%;
 }
 
-.label_alto {
+.label_top {
     top: 25%;
     left:-25%;
 }
 
-.label_armadio_v:hover{
+.label_wardrobe_v:hover{
     transform: scale(3.0) rotate(150deg);
     transition: transform 0.5s ease;
 }
 
-.label_armadio_v:hover + .text_label_v {
+.label_wardrobe_v:hover + .text_label_v {
     opacity: 1;
 }
 
@@ -467,11 +466,11 @@ img{
     transform: rotate(-2deg)
 
 }
-.last.contenuto_img_label_v {
+.last.content_img_label_v {
     transform: rotate(-25deg);
 }
 
-.last.contenuto_img_label_v:hover{
+.last.content_img_label_v:hover{
     transform: scale(3.0) rotate(-25deg) translateX(-20%);
     transition: transform 0.5s ease;
 }
