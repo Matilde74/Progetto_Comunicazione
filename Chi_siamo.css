@@ -37,7 +37,7 @@ height:1200px;
 }
 
 .rhombus-container {
-    width: 60%;
+    width: 65%;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -82,6 +82,8 @@ height:1200px;
 .scrollsx {
     transform: scaleX(-1);
     margin-left: 10%;
+
+
 }
 
 .scrollsx, .scrolldx {
