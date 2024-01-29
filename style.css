@@ -7,6 +7,7 @@
     --ombra: #A4A292;
     --dark-color-opacity-70: #534631b3;
     --bs-dropdown-color: var(--primary-color);
+    min-width: 1024px;
 }
 
 @font-face {
@@ -193,7 +194,7 @@ li {
 }
 
 .nav-item {
-    font-family: "Gupter Medium", serif;
+    font-family: "Berkshire_Swash", fantasy;
     font-size: 1.25rem;
 }
 
