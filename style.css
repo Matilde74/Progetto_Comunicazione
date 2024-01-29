@@ -29,7 +29,7 @@
     src: url("font/Gupter/Gupter-Bold.ttf");
 }
 .h1{
-    font-family: Berkshire_Swash;
+    font-family: "Berkshire_Swash", fantasy;
     font-size: clamp(2.5em, 4em, 4em);
     color: var(--secondary-color);
 }
@@ -176,6 +176,7 @@ li::before {
     position: absolute;
     content: "";
     height: 3px;
+}
 
 #navbarNav {
     background-color: rgba(33, 33, 33, 0.8);
@@ -325,13 +326,15 @@ img{
 .img_md {
     width: 140px;
     height: 160px;
-    margin-top:-20px;
+    margin-top: -20px;
     cursor: pointer;
+}
 
 .img_big {
     width: 140px;
     height: 120px;
     cursor: pointer;
+}
 
 
 .label_armadio:hover{
