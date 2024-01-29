@@ -31,14 +31,14 @@ html[data-theme=alt]{
   }
 
   @font-face {
-    font-family: "BerkshireSwash";
+    font-family: "Berkshire_Swash";
     src: url("font/BerkshireSwash-Regular.ttf") format("truetype");
   }
 
 h2 {
     color: var(--secondary-color);
     font-size: 3.5rem;
-    font-family: BerkshireSwash;
+    font-family: "Berkshire_Swash";
 }
 
 
@@ -47,7 +47,7 @@ body {
 }
 
 .bodyfont{
-    font-family: Gupter-Regular;
+    font-family: "Gupter-Regular", serif;
     font-size: clamp(1em, 1.50em, 1.75em);
     color: var(--secondary-color);
     line-height: 150%;
@@ -56,18 +56,18 @@ body {
 .bodysmall {
     font-size:1rem ;
     color: var(--secondary-color);
-    font-family: Gupter-regular;
+    font-family: "Gupter-Regular", serif;
     line-height: 150%;
 }
 
 h4{
     font-size: 2rem;
     color: var(--secondary-color);
-    font-family: Gupter-regular;
+    font-family: "Gupter-Regular", serif;
 }
 
 .nav-item a {
-    font-family: BerkshireSwash;
+    font-family: "Berkshire_Swash", fantasy;
     font-size: 2em;
 }
 
@@ -276,7 +276,7 @@ li::after {
 .buttonpopup a {
     color: var(--light-color);
     text-decoration: none;
-    font-family: Gupter-Regular;
+    font-family: "Gupter-Regular", serif;
     font-size: 1.5em;
 }
 
@@ -287,7 +287,7 @@ li::after {
 }
 
 .popup h3 {
-    font-family: BerkshireSwash;
+    font-family: "BerkshireSwash", fantasy;
     font-size: 3em;
     color: var(--secondary-color);
     text-align: center;

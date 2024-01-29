@@ -131,8 +131,6 @@ html {
 
 }
 
-
-
 .blur {
     display: none;
     top: 0;
@@ -196,7 +194,7 @@ li {
 
 .nav-item {
     font-family: "Berkshire_Swash", fantasy;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
 }
 
 .nav-link:hover{

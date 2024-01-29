@@ -118,11 +118,11 @@
 }
 
 nav{
-    top: 50%;
+    top: 25%;
     left: 0;
     z-index: 11;
     background-color: var(--dark-color-opacity-70);
-    padding-right: 100px;
+    padding-right: 50px;
     border-top-right-radius: 45px;
     border-bottom-right-radius: 45px;
     transition: 0.5s;
@@ -160,8 +160,8 @@ li {
 }
 
 .nav-item {
-    font-family: "Gupter Medium", serif;
-    font-size: 1.25rem;
+    font-family: "Berkshire_Swash", serif;
+    font-size: 2rem;
 }
 
 li::after {
