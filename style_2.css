@@ -17,22 +17,22 @@ html[data-theme=alt]{
 
 @font-face {
     font-family: "Gupter-Bold";
-    src: url("../font/Gupter/Gupter-Bold.ttf") format("truetype");
+    src: url("font/Gupter/Gupter-Bold.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "Gupter-Medium";
-    src: url("../font/Gupter/Gupter-Medium.ttf") format("truetype");
+    src: url("font/Gupter/Gupter-Medium.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "Gupter-Regular";
-    src: url("../font/Gupter/Gupter-Regular.ttf") format("truetype");
+    src: url("font/Gupter/Gupter-Regular.ttf") format("truetype");
   }
 
   @font-face {
     font-family: "BerkshireSwash";
-    src: url("../font/BerkshireSwash-Regular.ttf") format("truetype");
+    src: url("font/BerkshireSwash-Regular.ttf") format("truetype");
   }
 
 h2 {
@@ -72,7 +72,7 @@ h4{
 }
 
 .why_ephemera {
-    background-image: url("../immagini/Rectangle\ 219.png");
+    background-image: url("immagini/Rectangle 219.png");
     background-size: 100%;
 }
 
@@ -252,7 +252,7 @@ li::after {
     overflow: hidden;
     aspect-ratio: 1;
     align-items: center;
-    display: flexs;
+    display: flex;
 }
 
 .imgfake img {
@@ -343,7 +343,7 @@ li::after {
 }
 
 .historysection {
-    background-image: url("../immagini/carta.png");
+    background-image: url("immagini/carta.png");
     object-fit: cover;
 }
 
